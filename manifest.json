@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Colab Question Mark Box Begone",
+    "description": "Remove those pesky question mark boxes that make colab help hard to read",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://colab.research.google.com/*"
+            ]
+        }
+    ]
+}
