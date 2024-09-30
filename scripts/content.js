@@ -1,13 +1,11 @@
 function waitForElements(selector) {
   return new Promise(resolve => {
     if (document.querySelectorAll(selector).length > 0) {
-      console.log("hit1")
       return resolve(document.querySelectorAll(selector));
     }
 
     const observer = new MutationObserver(mutations => {
       if (document.querySelectorAll(selector).length > 0) {
-        console.log("hit2")
         observer.disconnect();
         resolve(document.querySelectorAll(selector));
       }
