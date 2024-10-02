@@ -24,7 +24,6 @@ const observer = new MutationObserver(mutationList => {
         if ( mutation.addedNodes[0]?.matches?.("colab-tab") ?? false ) {
           mutation.addedNodes[0].children[0].children[0].children[0].textContent = mutation.addedNodes[0].children[0].children[0].children[0].textContent.replace(/(_)/g, '');
         }
-    } else if (mutation.type === "attributes") { // if the mutation type refers to the atributes of the observed element changing 
     }
   }
 });
