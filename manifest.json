@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Google Colab Question Mark Begone",
-    "description": "Remove those pesky question mark boxes that make colab help pages hard to read when using the R language.",
+    "description": "Cleans up those pesky question mark boxes that make colab help pages hard to read when using the R language.",
     "version": "1.0",
     "action": {
       "default_popup": "html/index.html"
