@@ -4,7 +4,7 @@
     "description": "Remove those pesky question mark boxes that make colab help pages hard to read when using the R language.",
     "version": "1.0",
     "action": {
-      "default_popup": "index.html"
+      "default_popup": "html/index.html"
     },
     "content_scripts": [
         {
